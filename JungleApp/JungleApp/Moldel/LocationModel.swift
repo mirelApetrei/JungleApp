@@ -8,7 +8,7 @@
 import Foundation
 import MapKit
 
-struct NationalParkLocation {
+struct NationalParkLocation: Codable, Identifiable {
     var id: String
     var name: String
     var image: String
