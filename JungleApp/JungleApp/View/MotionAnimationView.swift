@@ -46,8 +46,8 @@ struct MotionAnimationView: View {
             ZStack {
                 ForEach(0...randomCircle, id: \.self) { item in
                     Circle()
-                        .foregroundColor(.gray)
-                        .opacity(0.2)
+                        .foregroundColor(.accentColor)
+                        .opacity(0.15)
                         .frame(width: randomSize(), height: randomSize(), alignment: .center)
                         .scaleEffect(isAnimating ? randomScale() : 1)
                         .position(
