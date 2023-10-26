@@ -40,9 +40,9 @@ struct GalleryView: View {
                 // MARK: - SLIDER
                 Slider(value: $gridColumn, in: 2...4, step: 1)
                     .padding(.horizontal)
-                    .onChange(of: gridColumn, perform: { value in
+                    .onChange(  of: gridColumn, perform: { value in
                         gridSwitch()
-                    })
+                    }) 
 
                 // MARK: - GRID
                 LazyVGrid(columns: gridLayout,alignment: .center, spacing: 12) {

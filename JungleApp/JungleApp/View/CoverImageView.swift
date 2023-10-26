@@ -15,8 +15,6 @@ struct CoverImageView: View {
 
 //    MARK: - BODY
 
-
-
     var body: some View {
         TabView {
             ForEach(coverImages) { item in
